@@ -1,0 +1,99 @@
+AllCops:
+  Exclude:
+    - "bin/**/*"
+    - "db/**/*"
+    - "config/**/*"
+    - "node_modules/**/*"
+    - "script/**/*"
+    - "support/**/*"
+    - "tmp/**/*"
+    - "test/**/*"
+  NewCops: enable
+
+Style/ConditionalAssignment:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Style/RedundantReturn:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Style/MutableConstant:
+  Enabled: false
+Style/SignalException:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Style/MissingRespondToMissing:
+  Enabled: false
+Style/SymbolArray:
+  EnforcedStyle: "brackets"
+  # Reason: using percent style (e.g. %i[foo bar baz]) for list of Symbols is hard to read and search
+Lint/MissingSuper:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: false
+Style/ClassVars:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 200
+Layout/LineLength:
+  Max: 200
+Metrics/BlockLength:
+  Max: 2000
+  AllowedMethods: ["describe", "context"]
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: true
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
+  Enabled: false
+
+Layout/AccessModifierIndentation:
+  Enabled: true
+  EnforcedStyle: "indent"
+Layout/AssignmentIndentation:
+  Enabled: true
+Layout/BlockEndNewline:
+  Enabled: true
+Layout/ConditionPosition:
+  Enabled: true
+Layout/DotPosition:
+  Enabled: true
+  EnforcedStyle: "leading"
+Layout/ElseAlignment:
+  Enabled: true
+Layout/EmptyComment:
+  Enabled: true
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: true
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: true
+
+Style/NumericLiterals:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Naming/VariableNumber:
+  Enabled: false
